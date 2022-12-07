@@ -1,8 +1,5 @@
 let counter = 0;
-let stopTime = false;
-
 buttonElement = document.querySelector('button');
-
 
 buttonElement.addEventListener(('click'), function(){
     if (counter < 10) {
