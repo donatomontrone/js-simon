@@ -8,7 +8,7 @@ tempo.innerHTML = time;
 let startChrono = false;
 let clock;
 
-start.addEventListener('click', function () {
+start.addEventListener(('click'), function () {
     if (startChrono) {
         return;
 }
@@ -18,3 +18,16 @@ start.addEventListener('click', function () {
     tempo.innerHTML = time;
 }, 100);
 });
+
+pause.addEventListener('click', function () {
+    clearInterval(clock);
+    tempo.innerHTML = time;
+    startChrono = false;
+});
+
+reset.addEventListener(('click'), function () {
+    clearInterval(clock);
+    time = 0;
+    tempo.innerHTML = time;
+    startChrono = false;
+})

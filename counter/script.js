@@ -17,8 +17,7 @@ buttonElement.addEventListener(('click'), function(){
             }, 3 * 1000);
         }
     }
-
     if (counter == 10) {
         buttonElement.classList.add('btn-danger');
     }
-})
+});
